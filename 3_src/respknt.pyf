@@ -1,0 +1,929 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module respknt ! in 
+    interface  ! in :respknt
+        complex dimension(45) :: mu11
+        complex dimension(45) :: mu12
+        complex dimension(45) :: mu21
+        complex dimension(45) :: mu22
+        complex dimension(45) :: md11
+        complex dimension(45) :: md12
+        complex dimension(45) :: md21
+        complex dimension(45) :: md22
+        complex dimension(45) :: nu11
+        complex dimension(45) :: nu12
+        complex dimension(45) :: nu21
+        complex dimension(45) :: nu22
+        complex dimension(45) :: nd11
+        complex dimension(45) :: nd12
+        complex dimension(45) :: nd21
+        complex dimension(45) :: nd22
+        complex dimension(45) :: mu
+        complex dimension(45) :: epa
+        complex dimension(45) :: epb
+        complex dimension(45) :: zsh
+        complex dimension(45) :: darupp
+        complex dimension(45) :: darups
+        complex dimension(45) :: darusp
+        complex dimension(45) :: daruss
+        complex dimension(45) :: darush
+        complex dimension(45) :: dardpp
+        complex dimension(45) :: dardps
+        complex dimension(45) :: dardsp
+        complex dimension(45) :: dardss
+        complex dimension(45) :: dardsh
+        complex dimension(45) :: datupp
+        complex dimension(45) :: datups
+        complex dimension(45) :: datusp
+        complex dimension(45) :: datuss
+        complex dimension(45) :: datush
+        complex dimension(45) :: datdpp
+        complex dimension(45) :: datdps
+        complex dimension(45) :: datdsp
+        complex dimension(45) :: datdss
+        complex dimension(45) :: datdsh
+        complex dimension(45) :: dbrupp
+        complex dimension(45) :: dbrups
+        complex dimension(45) :: dbrusp
+        complex dimension(45) :: dbruss
+        complex dimension(45) :: dbrush
+        complex dimension(45) :: dbrdpp
+        complex dimension(45) :: dbrdps
+        complex dimension(45) :: dbrdsp
+        complex dimension(45) :: dbrdss
+        complex dimension(45) :: dbrdsh
+        complex dimension(45) :: dbtupp
+        complex dimension(45) :: dbtups
+        complex dimension(45) :: dbtusp
+        complex dimension(45) :: dbtuss
+        complex dimension(45) :: dbtush
+        complex dimension(45) :: dbtdpp
+        complex dimension(45) :: dbtdps
+        complex dimension(45) :: dbtdsp
+        complex dimension(45) :: dbtdss
+        complex dimension(45) :: dbtdsh
+        complex dimension(45) :: dxi
+        complex dimension(45) :: deta
+        complex :: druppfs
+        complex :: drupsfs
+        complex :: druspfs
+        complex :: drussfs
+        complex :: drushfs
+        complex :: ddvpfs
+        complex :: ddvsfs
+        complex :: ddrpfs
+        complex :: ddrsfs
+        complex :: ddtshfs
+        complex dimension(43) :: srndpp
+        complex dimension(43) :: srndps
+        complex dimension(43) :: srndsp
+        complex dimension(43) :: srndss
+        complex dimension(43) :: srndsh
+        complex dimension(43) :: stnupp
+        complex dimension(43) :: stnups
+        complex dimension(43) :: stnusp
+        complex dimension(43) :: stnuss
+        complex dimension(43) :: stnush
+        complex dimension(43) :: srnupp
+        complex dimension(43) :: srnups
+        complex dimension(43) :: srnusp
+        complex dimension(43) :: srnuss
+        complex dimension(43) :: srnush
+        complex dimension(43) :: sdvp
+        complex dimension(43) :: sdvs
+        complex dimension(43) :: sdrp
+        complex dimension(43) :: sdrs
+        complex dimension(43) :: sdts
+        complex :: mus11
+        complex :: mus12
+        complex :: mus21
+        complex :: mus22
+        complex :: mussh
+        complex :: nus11
+        complex :: nus12
+        complex :: nus21
+        complex :: nus22
+        complex :: nussh
+        complex :: mds11
+        complex :: mds12
+        complex :: mds21
+        complex :: mds22
+        complex :: mdssh
+        complex :: nds11
+        complex :: nds12
+        complex :: nds21
+        complex :: nds22
+        complex :: ndssh
+        complex dimension(5) :: pup0
+        complex dimension(5) :: pdn0
+        complex dimension(5) :: svup0
+        complex dimension(5) :: svdn0
+        complex dimension(5) :: shup0
+        complex dimension(5) :: shdn0
+        complex dimension(5) :: pupp1
+        complex dimension(5) :: pdnp1
+        complex dimension(5) :: svupp1
+        complex dimension(5) :: svdnp1
+        complex dimension(5) :: shupp1
+        complex dimension(5) :: shdnp1
+        complex dimension(5) :: pupm1
+        complex dimension(5) :: pdnm1
+        complex dimension(5) :: svupm1
+        complex dimension(5) :: svdnm1
+        complex dimension(5) :: shupm1
+        complex dimension(5) :: shdnm1
+        complex dimension(5) :: pupp2
+        complex dimension(5) :: pdnp2
+        complex dimension(5) :: svupp2
+        complex dimension(5) :: svdnp2
+        complex dimension(5) :: shupp2
+        complex dimension(5) :: shdnp2
+        complex dimension(5) :: pupm2
+        complex dimension(5) :: pdnm2
+        complex dimension(5) :: svupm2
+        complex dimension(5) :: svdnm2
+        complex dimension(5) :: shupm2
+        complex dimension(5) :: shdnm2
+        real dimension(5) :: mxx
+        real dimension(5) :: mxy
+        real dimension(5) :: mxz
+        real dimension(5) :: myy
+        real dimension(5) :: myz
+        real dimension(5) :: mzz
+        real :: rhos
+        complex :: alfas
+        complex :: betas
+        integer*2 :: srclyr
+        complex :: dvpup
+        complex :: dvsup
+        complex :: drpup
+        complex :: drsup
+        complex :: dtsup
+        complex :: dvpdn
+        complex :: dvsdn
+        complex :: drpdn
+        complex :: drsdn
+        complex :: dtsdn
+        complex dimension(45) :: alfa
+        complex dimension(45) :: beta
+        real dimension(45) :: qp
+        real dimension(45) :: qs
+        real dimension(45) :: rho
+        real dimension(45) :: thik
+        complex dimension(45) :: rupp
+        complex dimension(45) :: rups
+        complex dimension(45) :: rusp
+        complex dimension(45) :: russ
+        complex dimension(45) :: rush
+        complex dimension(45) :: rdpp
+        complex dimension(45) :: rdps
+        complex dimension(45) :: rdsp
+        complex dimension(45) :: rdss
+        complex dimension(45) :: rdsh
+        complex dimension(45) :: tupp
+        complex dimension(45) :: tups
+        complex dimension(45) :: tusp
+        complex dimension(45) :: tuss
+        complex dimension(45) :: tush
+        complex dimension(45) :: tdpp
+        complex dimension(45) :: tdps
+        complex dimension(45) :: tdsp
+        complex dimension(45) :: tdss
+        complex dimension(45) :: tdsh
+        complex :: ruppfs
+        complex :: rupsfs
+        complex :: ruspfs
+        complex :: russfs
+        complex :: rushfs
+        complex :: dvpfs
+        complex :: dvsfs
+        complex :: drpfs
+        complex :: drsfs
+        complex :: dtshfs
+        complex dimension(45) :: xi
+        complex dimension(45) :: eta
+        integer*2 dimension(46) :: cnvrsn
+        integer*2 dimension(45) :: reverb
+        common /invsav1/ mu11,mu12,mu21,mu22,md11,md12,md21,md22,nu11,nu12,nu21,nu22,nd11,nd12,nd21,nd22,mu,epa,epb,zsh
+        common /invsav2/ darupp,darups,darusp,daruss,darush,dardpp,dardps,dardsp,dardss,dardsh,datupp,datups,datusp,datuss,datush,datdpp,datdps,datdsp,datdss,datdsh,dbrupp,dbrups,dbrusp,dbruss,dbrush,dbrdpp,dbrdps,dbrdsp,dbrdss,dbrdsh,dbtupp,dbtups,dbtusp,dbtuss,dbtush,dbtdpp,dbtdps,dbtdsp,dbtdss,dbtdsh,dxi,deta
+        common /invsav3/ druppfs,drupsfs,druspfs,drussfs,drushfs,ddvpfs,ddvsfs,ddrpfs,ddrsfs,ddtshfs
+        common /invsav4/ srndpp,srndps,srndsp,srndss,srndsh,stnupp,stnups,stnusp,stnuss,stnush,srnupp,srnups,srnusp,srnuss,srnush,sdvp,sdvs,sdrp,sdrs,sdts
+        common /srctrm/ mus11,mus12,mus21,mus22,mussh,nus11,nus12,nus21,nus22,nussh,mds11,mds12,mds21,mds22,mdssh,nds11,nds12,nds21,nds22,ndssh,pup0,pdn0,svup0,svdn0,shup0,shdn0,pupp1,pdnp1,svupp1,svdnp1,shupp1,shdnp1,pupm1,pdnm1,svupm1,svdnm1,shupm1,shdnm1,pupp2,pdnp2,svupp2,svdnp2,shupp2,shdnp2,pupm2,pdnm2,svupm2,svdnm2,shupm2,shdnm2,mxx,mxy,mxz,myy,myz,mzz,rhos,alfas,betas,srclyr
+        common /respns/ dvpup,dvsup,drpup,drsup,dtsup,dvpdn,dvsdn,drpdn,drsdn,dtsdn
+        common /model/ alfa,beta,qp,qs,rho,thik
+        common /rfltrn/ rupp,rups,rusp,russ,rush,rdpp,rdps,rdsp,rdss,rdsh,tupp,tups,tusp,tuss,tush,tdpp,tdps,tdsp,tdss,tdsh,ruppfs,rupsfs,ruspfs,russfs,rushfs,dvpfs,dvsfs,drpfs,drsfs,dtshfs,xi,eta,cnvrsn,reverb
+        subroutine respknt_interface(slowness,dt_in,tduring,nl,rho_in,thick_in,vp_in,vs_in,wavez,waver) ! in :respknt:respknt_interface.f
+            real :: slowness
+            real :: dt_in
+            real :: tduring
+            integer :: nl
+            real dimension(50) :: rho_in
+            real dimension(50) :: thick_in
+            real dimension(50) :: vp_in
+            real dimension(50) :: vs_in
+            real dimension(8192),intent(out) :: wavez
+            real dimension(8192),intent(out) :: waver
+            complex dimension(45) :: mu11
+            complex dimension(45) :: mu12
+            complex dimension(45) :: mu21
+            complex dimension(45) :: mu22
+            complex dimension(45) :: md11
+            complex dimension(45) :: md12
+            complex dimension(45) :: md21
+            complex dimension(45) :: md22
+            complex dimension(45) :: nu11
+            complex dimension(45) :: nu12
+            complex dimension(45) :: nu21
+            complex dimension(45) :: nu22
+            complex dimension(45) :: nd11
+            complex dimension(45) :: nd12
+            complex dimension(45) :: nd21
+            complex dimension(45) :: nd22
+            complex dimension(45) :: mu
+            complex dimension(45) :: epa
+            complex dimension(45) :: epb
+            complex dimension(45) :: zsh
+            complex dimension(45) :: darupp
+            complex dimension(45) :: darups
+            complex dimension(45) :: darusp
+            complex dimension(45) :: daruss
+            complex dimension(45) :: darush
+            complex dimension(45) :: dardpp
+            complex dimension(45) :: dardps
+            complex dimension(45) :: dardsp
+            complex dimension(45) :: dardss
+            complex dimension(45) :: dardsh
+            complex dimension(45) :: datupp
+            complex dimension(45) :: datups
+            complex dimension(45) :: datusp
+            complex dimension(45) :: datuss
+            complex dimension(45) :: datush
+            complex dimension(45) :: datdpp
+            complex dimension(45) :: datdps
+            complex dimension(45) :: datdsp
+            complex dimension(45) :: datdss
+            complex dimension(45) :: datdsh
+            complex dimension(45) :: dbrupp
+            complex dimension(45) :: dbrups
+            complex dimension(45) :: dbrusp
+            complex dimension(45) :: dbruss
+            complex dimension(45) :: dbrush
+            complex dimension(45) :: dbrdpp
+            complex dimension(45) :: dbrdps
+            complex dimension(45) :: dbrdsp
+            complex dimension(45) :: dbrdss
+            complex dimension(45) :: dbrdsh
+            complex dimension(45) :: dbtupp
+            complex dimension(45) :: dbtups
+            complex dimension(45) :: dbtusp
+            complex dimension(45) :: dbtuss
+            complex dimension(45) :: dbtush
+            complex dimension(45) :: dbtdpp
+            complex dimension(45) :: dbtdps
+            complex dimension(45) :: dbtdsp
+            complex dimension(45) :: dbtdss
+            complex dimension(45) :: dbtdsh
+            complex dimension(45) :: dxi
+            complex dimension(45) :: deta
+            complex :: druppfs
+            complex :: drupsfs
+            complex :: druspfs
+            complex :: drussfs
+            complex :: drushfs
+            complex :: ddvpfs
+            complex :: ddvsfs
+            complex :: ddrpfs
+            complex :: ddrsfs
+            complex :: ddtshfs
+            complex dimension(43) :: srndpp
+            complex dimension(43) :: srndps
+            complex dimension(43) :: srndsp
+            complex dimension(43) :: srndss
+            complex dimension(43) :: srndsh
+            complex dimension(43) :: stnupp
+            complex dimension(43) :: stnups
+            complex dimension(43) :: stnusp
+            complex dimension(43) :: stnuss
+            complex dimension(43) :: stnush
+            complex dimension(43) :: srnupp
+            complex dimension(43) :: srnups
+            complex dimension(43) :: srnusp
+            complex dimension(43) :: srnuss
+            complex dimension(43) :: srnush
+            complex dimension(43) :: sdvp
+            complex dimension(43) :: sdvs
+            complex dimension(43) :: sdrp
+            complex dimension(43) :: sdrs
+            complex dimension(43) :: sdts
+            complex :: mus11
+            complex :: mus12
+            complex :: mus21
+            complex :: mus22
+            complex :: mussh
+            complex :: nus11
+            complex :: nus12
+            complex :: nus21
+            complex :: nus22
+            complex :: nussh
+            complex :: mds11
+            complex :: mds12
+            complex :: mds21
+            complex :: mds22
+            complex :: mdssh
+            complex :: nds11
+            complex :: nds12
+            complex :: nds21
+            complex :: nds22
+            complex :: ndssh
+            complex dimension(5) :: pup0
+            complex dimension(5) :: pdn0
+            complex dimension(5) :: svup0
+            complex dimension(5) :: svdn0
+            complex dimension(5) :: shup0
+            complex dimension(5) :: shdn0
+            complex dimension(5) :: pupp1
+            complex dimension(5) :: pdnp1
+            complex dimension(5) :: svupp1
+            complex dimension(5) :: svdnp1
+            complex dimension(5) :: shupp1
+            complex dimension(5) :: shdnp1
+            complex dimension(5) :: pupm1
+            complex dimension(5) :: pdnm1
+            complex dimension(5) :: svupm1
+            complex dimension(5) :: svdnm1
+            complex dimension(5) :: shupm1
+            complex dimension(5) :: shdnm1
+            complex dimension(5) :: pupp2
+            complex dimension(5) :: pdnp2
+            complex dimension(5) :: svupp2
+            complex dimension(5) :: svdnp2
+            complex dimension(5) :: shupp2
+            complex dimension(5) :: shdnp2
+            complex dimension(5) :: pupm2
+            complex dimension(5) :: pdnm2
+            complex dimension(5) :: svupm2
+            complex dimension(5) :: svdnm2
+            complex dimension(5) :: shupm2
+            complex dimension(5) :: shdnm2
+            real dimension(5) :: mxx
+            real dimension(5) :: mxy
+            real dimension(5) :: mxz
+            real dimension(5) :: myy
+            real dimension(5) :: myz
+            real dimension(5) :: mzz
+            real :: rhos
+            complex :: alfas
+            complex :: betas
+            integer*2 :: srclyr
+            integer :: inunit
+            integer :: ounit
+            complex dimension(8192) :: u0
+            complex dimension(8192) :: w0
+            complex dimension(8192) :: u1
+            complex dimension(8192) :: w1
+            complex dimension(8192) :: tn
+            complex :: dvpup
+            complex :: dvsup
+            complex :: drpup
+            complex :: drsup
+            complex :: dtsup
+            complex :: dvpdn
+            complex :: dvsdn
+            complex :: drpdn
+            complex :: drsdn
+            complex :: dtsdn
+            complex dimension(45) :: alfa
+            complex dimension(45) :: beta
+            real dimension(45) :: qp
+            real dimension(45) :: qs
+            real dimension(45) :: rho
+            real dimension(45) :: thik
+            complex dimension(45) :: rupp
+            complex dimension(45) :: rups
+            complex dimension(45) :: rusp
+            complex dimension(45) :: russ
+            complex dimension(45) :: rush
+            complex dimension(45) :: rdpp
+            complex dimension(45) :: rdps
+            complex dimension(45) :: rdsp
+            complex dimension(45) :: rdss
+            complex dimension(45) :: rdsh
+            complex dimension(45) :: tupp
+            complex dimension(45) :: tups
+            complex dimension(45) :: tusp
+            complex dimension(45) :: tuss
+            complex dimension(45) :: tush
+            complex dimension(45) :: tdpp
+            complex dimension(45) :: tdps
+            complex dimension(45) :: tdsp
+            complex dimension(45) :: tdss
+            complex dimension(45) :: tdsh
+            complex :: ruppfs
+            complex :: rupsfs
+            complex :: ruspfs
+            complex :: russfs
+            complex :: rushfs
+            complex :: dvpfs
+            complex :: dvsfs
+            complex :: drpfs
+            complex :: drsfs
+            complex :: dtshfs
+            complex dimension(45) :: xi
+            complex dimension(45) :: eta
+            integer*2 dimension(46) :: cnvrsn
+            integer*2 dimension(45) :: reverb
+            common /invsav1/ mu11,mu12,mu21,mu22,md11,md12,md21,md22,nu11,nu12,nu21,nu22,nd11,nd12,nd21,nd22,mu,epa,epb,zsh
+            common /invsav2/ darupp,darups,darusp,daruss,darush,dardpp,dardps,dardsp,dardss,dardsh,datupp,datups,datusp,datuss,datush,datdpp,datdps,datdsp,datdss,datdsh,dbrupp,dbrups,dbrusp,dbruss,dbrush,dbrdpp,dbrdps,dbrdsp,dbrdss,dbrdsh,dbtupp,dbtups,dbtusp,dbtuss,dbtush,dbtdpp,dbtdps,dbtdsp,dbtdss,dbtdsh,dxi,deta
+            common /invsav3/ druppfs,drupsfs,druspfs,drussfs,drushfs,ddvpfs,ddvsfs,ddrpfs,ddrsfs,ddtshfs
+            common /invsav4/ srndpp,srndps,srndsp,srndss,srndsh,stnupp,stnups,stnusp,stnuss,stnush,srnupp,srnups,srnusp,srnuss,srnush,sdvp,sdvs,sdrp,sdrs,sdts
+            common /srctrm/ mus11,mus12,mus21,mus22,mussh,nus11,nus12,nus21,nus22,nussh,mds11,mds12,mds21,mds22,mdssh,nds11,nds12,nds21,nds22,ndssh,pup0,pdn0,svup0,svdn0,shup0,shdn0,pupp1,pdnp1,svupp1,svdnp1,shupp1,shdnp1,pupm1,pdnm1,svupm1,svdnm1,shupm1,shdnm1,pupp2,pdnp2,svupp2,svdnp2,shupp2,shdnp2,pupm2,pdnm2,svupm2,svdnm2,shupm2,shdnm2,mxx,mxy,mxz,myy,myz,mzz,rhos,alfas,betas,srclyr
+            common /innout/ inunit,ounit
+            common /cmparr/ u0,w0,u1,w1,tn
+            common /respns/ dvpup,dvsup,drpup,drsup,dtsup,dvpdn,dvsdn,drpdn,drsdn,dtsdn
+            common /model/ alfa,beta,qp,qs,rho,thik
+            common /rfltrn/ rupp,rups,rusp,russ,rush,rdpp,rdps,rdsp,rdss,rdsh,tupp,tups,tusp,tuss,tush,tdpp,tdps,tdsp,tdss,tdsh,ruppfs,rupsfs,ruspfs,russfs,rushfs,dvpfs,dvsfs,drpfs,drsfs,dtshfs,xi,eta,cnvrsn,reverb
+        end subroutine respknt_interface
+        function vslow(v,p,f) ! in :respknt:kntfun.f
+            complex :: v
+            complex :: p
+            complex :: f
+            complex :: vslow
+        end function vslow
+        function cphs(arg) ! in :respknt:kntfun.f
+            complex :: arg
+            complex :: cphs
+        end function cphs
+        subroutine rcvrfn(p,f,nlyrs,dvp,dvs,drp,drs,dts) ! in :respknt:rcvrfn.f
+            complex :: p
+            complex :: f
+            integer :: nlyrs
+            complex :: dvp
+            complex :: dvs
+            complex :: drp
+            complex :: drs
+            complex :: dts
+            complex dimension(45) :: mu11
+            complex dimension(45) :: mu12
+            complex dimension(45) :: mu21
+            complex dimension(45) :: mu22
+            complex dimension(45) :: md11
+            complex dimension(45) :: md12
+            complex dimension(45) :: md21
+            complex dimension(45) :: md22
+            complex dimension(45) :: nu11
+            complex dimension(45) :: nu12
+            complex dimension(45) :: nu21
+            complex dimension(45) :: nu22
+            complex dimension(45) :: nd11
+            complex dimension(45) :: nd12
+            complex dimension(45) :: nd21
+            complex dimension(45) :: nd22
+            complex dimension(45) :: mu
+            complex dimension(45) :: epa
+            complex dimension(45) :: epb
+            complex dimension(45) :: zsh
+            complex dimension(45) :: darupp
+            complex dimension(45) :: darups
+            complex dimension(45) :: darusp
+            complex dimension(45) :: daruss
+            complex dimension(45) :: darush
+            complex dimension(45) :: dardpp
+            complex dimension(45) :: dardps
+            complex dimension(45) :: dardsp
+            complex dimension(45) :: dardss
+            complex dimension(45) :: dardsh
+            complex dimension(45) :: datupp
+            complex dimension(45) :: datups
+            complex dimension(45) :: datusp
+            complex dimension(45) :: datuss
+            complex dimension(45) :: datush
+            complex dimension(45) :: datdpp
+            complex dimension(45) :: datdps
+            complex dimension(45) :: datdsp
+            complex dimension(45) :: datdss
+            complex dimension(45) :: datdsh
+            complex dimension(45) :: dbrupp
+            complex dimension(45) :: dbrups
+            complex dimension(45) :: dbrusp
+            complex dimension(45) :: dbruss
+            complex dimension(45) :: dbrush
+            complex dimension(45) :: dbrdpp
+            complex dimension(45) :: dbrdps
+            complex dimension(45) :: dbrdsp
+            complex dimension(45) :: dbrdss
+            complex dimension(45) :: dbrdsh
+            complex dimension(45) :: dbtupp
+            complex dimension(45) :: dbtups
+            complex dimension(45) :: dbtusp
+            complex dimension(45) :: dbtuss
+            complex dimension(45) :: dbtush
+            complex dimension(45) :: dbtdpp
+            complex dimension(45) :: dbtdps
+            complex dimension(45) :: dbtdsp
+            complex dimension(45) :: dbtdss
+            complex dimension(45) :: dbtdsh
+            complex dimension(45) :: dxi
+            complex dimension(45) :: deta
+            complex :: druppfs
+            complex :: drupsfs
+            complex :: druspfs
+            complex :: drussfs
+            complex :: drushfs
+            complex :: ddvpfs
+            complex :: ddvsfs
+            complex :: ddrpfs
+            complex :: ddrsfs
+            complex :: ddtshfs
+            complex dimension(43) :: srndpp
+            complex dimension(43) :: srndps
+            complex dimension(43) :: srndsp
+            complex dimension(43) :: srndss
+            complex dimension(43) :: srndsh
+            complex dimension(43) :: stnupp
+            complex dimension(43) :: stnups
+            complex dimension(43) :: stnusp
+            complex dimension(43) :: stnuss
+            complex dimension(43) :: stnush
+            complex dimension(43) :: srnupp
+            complex dimension(43) :: srnups
+            complex dimension(43) :: srnusp
+            complex dimension(43) :: srnuss
+            complex dimension(43) :: srnush
+            complex dimension(43) :: sdvp
+            complex dimension(43) :: sdvs
+            complex dimension(43) :: sdrp
+            complex dimension(43) :: sdrs
+            complex dimension(43) :: sdts
+            complex :: mus11
+            complex :: mus12
+            complex :: mus21
+            complex :: mus22
+            complex :: mussh
+            complex :: nus11
+            complex :: nus12
+            complex :: nus21
+            complex :: nus22
+            complex :: nussh
+            complex :: mds11
+            complex :: mds12
+            complex :: mds21
+            complex :: mds22
+            complex :: mdssh
+            complex :: nds11
+            complex :: nds12
+            complex :: nds21
+            complex :: nds22
+            complex :: ndssh
+            complex dimension(5) :: pup0
+            complex dimension(5) :: pdn0
+            complex dimension(5) :: svup0
+            complex dimension(5) :: svdn0
+            complex dimension(5) :: shup0
+            complex dimension(5) :: shdn0
+            complex dimension(5) :: pupp1
+            complex dimension(5) :: pdnp1
+            complex dimension(5) :: svupp1
+            complex dimension(5) :: svdnp1
+            complex dimension(5) :: shupp1
+            complex dimension(5) :: shdnp1
+            complex dimension(5) :: pupm1
+            complex dimension(5) :: pdnm1
+            complex dimension(5) :: svupm1
+            complex dimension(5) :: svdnm1
+            complex dimension(5) :: shupm1
+            complex dimension(5) :: shdnm1
+            complex dimension(5) :: pupp2
+            complex dimension(5) :: pdnp2
+            complex dimension(5) :: svupp2
+            complex dimension(5) :: svdnp2
+            complex dimension(5) :: shupp2
+            complex dimension(5) :: shdnp2
+            complex dimension(5) :: pupm2
+            complex dimension(5) :: pdnm2
+            complex dimension(5) :: svupm2
+            complex dimension(5) :: svdnm2
+            complex dimension(5) :: shupm2
+            complex dimension(5) :: shdnm2
+            real dimension(5) :: mxx
+            real dimension(5) :: mxy
+            real dimension(5) :: mxz
+            real dimension(5) :: myy
+            real dimension(5) :: myz
+            real dimension(5) :: mzz
+            real :: rhos
+            complex :: alfas
+            complex :: betas
+            integer*2 :: srclyr
+            complex :: dvpup
+            complex :: dvsup
+            complex :: drpup
+            complex :: drsup
+            complex :: dtsup
+            complex :: dvpdn
+            complex :: dvsdn
+            complex :: drpdn
+            complex :: drsdn
+            complex :: dtsdn
+            complex dimension(45) :: alfa
+            complex dimension(45) :: beta
+            real dimension(45) :: qp
+            real dimension(45) :: qs
+            real dimension(45) :: rho
+            real dimension(45) :: thik
+            complex dimension(45) :: rupp
+            complex dimension(45) :: rups
+            complex dimension(45) :: rusp
+            complex dimension(45) :: russ
+            complex dimension(45) :: rush
+            complex dimension(45) :: rdpp
+            complex dimension(45) :: rdps
+            complex dimension(45) :: rdsp
+            complex dimension(45) :: rdss
+            complex dimension(45) :: rdsh
+            complex dimension(45) :: tupp
+            complex dimension(45) :: tups
+            complex dimension(45) :: tusp
+            complex dimension(45) :: tuss
+            complex dimension(45) :: tush
+            complex dimension(45) :: tdpp
+            complex dimension(45) :: tdps
+            complex dimension(45) :: tdsp
+            complex dimension(45) :: tdss
+            complex dimension(45) :: tdsh
+            complex :: ruppfs
+            complex :: rupsfs
+            complex :: ruspfs
+            complex :: russfs
+            complex :: rushfs
+            complex :: dvpfs
+            complex :: dvsfs
+            complex :: drpfs
+            complex :: drsfs
+            complex :: dtshfs
+            complex dimension(45) :: xi
+            complex dimension(45) :: eta
+            integer*2 dimension(46) :: cnvrsn
+            integer*2 dimension(45) :: reverb
+            common /invsav1/ mu11,mu12,mu21,mu22,md11,md12,md21,md22,nu11,nu12,nu21,nu22,nd11,nd12,nd21,nd22,mu,epa,epb,zsh
+            common /invsav2/ darupp,darups,darusp,daruss,darush,dardpp,dardps,dardsp,dardss,dardsh,datupp,datups,datusp,datuss,datush,datdpp,datdps,datdsp,datdss,datdsh,dbrupp,dbrups,dbrusp,dbruss,dbrush,dbrdpp,dbrdps,dbrdsp,dbrdss,dbrdsh,dbtupp,dbtups,dbtusp,dbtuss,dbtush,dbtdpp,dbtdps,dbtdsp,dbtdss,dbtdsh,dxi,deta
+            common /invsav3/ druppfs,drupsfs,druspfs,drussfs,drushfs,ddvpfs,ddvsfs,ddrpfs,ddrsfs,ddtshfs
+            common /invsav4/ srndpp,srndps,srndsp,srndss,srndsh,stnupp,stnups,stnusp,stnuss,stnush,srnupp,srnups,srnusp,srnuss,srnush,sdvp,sdvs,sdrp,sdrs,sdts
+            common /srctrm/ mus11,mus12,mus21,mus22,mussh,nus11,nus12,nus21,nus22,nussh,mds11,mds12,mds21,mds22,mdssh,nds11,nds12,nds21,nds22,ndssh,pup0,pdn0,svup0,svdn0,shup0,shdn0,pupp1,pdnp1,svupp1,svdnp1,shupp1,shdnp1,pupm1,pdnm1,svupm1,svdnm1,shupm1,shdnm1,pupp2,pdnp2,svupp2,svdnp2,shupp2,shdnp2,pupm2,pdnm2,svupm2,svdnm2,shupm2,shdnm2,mxx,mxy,mxz,myy,myz,mzz,rhos,alfas,betas,srclyr
+            common /respns/ dvpup,dvsup,drpup,drsup,dtsup,dvpdn,dvsdn,drpdn,drsdn,dtsdn
+            common /model/ alfa,beta,qp,qs,rho,thik
+            common /rfltrn/ rupp,rups,rusp,russ,rush,rdpp,rdps,rdsp,rdss,rdsh,tupp,tups,tusp,tuss,tush,tdpp,tdps,tdsp,tdss,tdsh,ruppfs,rupsfs,ruspfs,russfs,rushfs,dvpfs,dvsfs,drpfs,drsfs,dtshfs,xi,eta,cnvrsn,reverb
+        end subroutine rcvrfn
+        subroutine ifmat(psvsh,p,f,nlyrs) ! in :respknt:ifmat.f
+            integer :: psvsh
+            complex :: p
+            complex :: f
+            integer :: nlyrs
+            complex dimension(45) :: mu11
+            complex dimension(45) :: mu12
+            complex dimension(45) :: mu21
+            complex dimension(45) :: mu22
+            complex dimension(45) :: md11
+            complex dimension(45) :: md12
+            complex dimension(45) :: md21
+            complex dimension(45) :: md22
+            complex dimension(45) :: nu11
+            complex dimension(45) :: nu12
+            complex dimension(45) :: nu21
+            complex dimension(45) :: nu22
+            complex dimension(45) :: nd11
+            complex dimension(45) :: nd12
+            complex dimension(45) :: nd21
+            complex dimension(45) :: nd22
+            complex dimension(45) :: mu
+            complex dimension(45) :: epa
+            complex dimension(45) :: epb
+            complex dimension(45) :: zsh
+            complex dimension(45) :: darupp
+            complex dimension(45) :: darups
+            complex dimension(45) :: darusp
+            complex dimension(45) :: daruss
+            complex dimension(45) :: darush
+            complex dimension(45) :: dardpp
+            complex dimension(45) :: dardps
+            complex dimension(45) :: dardsp
+            complex dimension(45) :: dardss
+            complex dimension(45) :: dardsh
+            complex dimension(45) :: datupp
+            complex dimension(45) :: datups
+            complex dimension(45) :: datusp
+            complex dimension(45) :: datuss
+            complex dimension(45) :: datush
+            complex dimension(45) :: datdpp
+            complex dimension(45) :: datdps
+            complex dimension(45) :: datdsp
+            complex dimension(45) :: datdss
+            complex dimension(45) :: datdsh
+            complex dimension(45) :: dbrupp
+            complex dimension(45) :: dbrups
+            complex dimension(45) :: dbrusp
+            complex dimension(45) :: dbruss
+            complex dimension(45) :: dbrush
+            complex dimension(45) :: dbrdpp
+            complex dimension(45) :: dbrdps
+            complex dimension(45) :: dbrdsp
+            complex dimension(45) :: dbrdss
+            complex dimension(45) :: dbrdsh
+            complex dimension(45) :: dbtupp
+            complex dimension(45) :: dbtups
+            complex dimension(45) :: dbtusp
+            complex dimension(45) :: dbtuss
+            complex dimension(45) :: dbtush
+            complex dimension(45) :: dbtdpp
+            complex dimension(45) :: dbtdps
+            complex dimension(45) :: dbtdsp
+            complex dimension(45) :: dbtdss
+            complex dimension(45) :: dbtdsh
+            complex dimension(45) :: dxi
+            complex dimension(45) :: deta
+            complex :: druppfs
+            complex :: drupsfs
+            complex :: druspfs
+            complex :: drussfs
+            complex :: drushfs
+            complex :: ddvpfs
+            complex :: ddvsfs
+            complex :: ddrpfs
+            complex :: ddrsfs
+            complex :: ddtshfs
+            complex dimension(43) :: srndpp
+            complex dimension(43) :: srndps
+            complex dimension(43) :: srndsp
+            complex dimension(43) :: srndss
+            complex dimension(43) :: srndsh
+            complex dimension(43) :: stnupp
+            complex dimension(43) :: stnups
+            complex dimension(43) :: stnusp
+            complex dimension(43) :: stnuss
+            complex dimension(43) :: stnush
+            complex dimension(43) :: srnupp
+            complex dimension(43) :: srnups
+            complex dimension(43) :: srnusp
+            complex dimension(43) :: srnuss
+            complex dimension(43) :: srnush
+            complex dimension(43) :: sdvp
+            complex dimension(43) :: sdvs
+            complex dimension(43) :: sdrp
+            complex dimension(43) :: sdrs
+            complex dimension(43) :: sdts
+            complex :: mus11
+            complex :: mus12
+            complex :: mus21
+            complex :: mus22
+            complex :: mussh
+            complex :: nus11
+            complex :: nus12
+            complex :: nus21
+            complex :: nus22
+            complex :: nussh
+            complex :: mds11
+            complex :: mds12
+            complex :: mds21
+            complex :: mds22
+            complex :: mdssh
+            complex :: nds11
+            complex :: nds12
+            complex :: nds21
+            complex :: nds22
+            complex :: ndssh
+            complex dimension(5) :: pup0
+            complex dimension(5) :: pdn0
+            complex dimension(5) :: svup0
+            complex dimension(5) :: svdn0
+            complex dimension(5) :: shup0
+            complex dimension(5) :: shdn0
+            complex dimension(5) :: pupp1
+            complex dimension(5) :: pdnp1
+            complex dimension(5) :: svupp1
+            complex dimension(5) :: svdnp1
+            complex dimension(5) :: shupp1
+            complex dimension(5) :: shdnp1
+            complex dimension(5) :: pupm1
+            complex dimension(5) :: pdnm1
+            complex dimension(5) :: svupm1
+            complex dimension(5) :: svdnm1
+            complex dimension(5) :: shupm1
+            complex dimension(5) :: shdnm1
+            complex dimension(5) :: pupp2
+            complex dimension(5) :: pdnp2
+            complex dimension(5) :: svupp2
+            complex dimension(5) :: svdnp2
+            complex dimension(5) :: shupp2
+            complex dimension(5) :: shdnp2
+            complex dimension(5) :: pupm2
+            complex dimension(5) :: pdnm2
+            complex dimension(5) :: svupm2
+            complex dimension(5) :: svdnm2
+            complex dimension(5) :: shupm2
+            complex dimension(5) :: shdnm2
+            real dimension(5) :: mxx
+            real dimension(5) :: mxy
+            real dimension(5) :: mxz
+            real dimension(5) :: myy
+            real dimension(5) :: myz
+            real dimension(5) :: mzz
+            real :: rhos
+            complex :: alfas
+            complex :: betas
+            integer*2 :: srclyr
+            complex :: dvpup
+            complex :: dvsup
+            complex :: drpup
+            complex :: drsup
+            complex :: dtsup
+            complex :: dvpdn
+            complex :: dvsdn
+            complex :: drpdn
+            complex :: drsdn
+            complex :: dtsdn
+            complex dimension(45) :: alfa
+            complex dimension(45) :: beta
+            real dimension(45) :: qp
+            real dimension(45) :: qs
+            real dimension(45) :: rho
+            real dimension(45) :: thik
+            complex dimension(45) :: rupp
+            complex dimension(45) :: rups
+            complex dimension(45) :: rusp
+            complex dimension(45) :: russ
+            complex dimension(45) :: rush
+            complex dimension(45) :: rdpp
+            complex dimension(45) :: rdps
+            complex dimension(45) :: rdsp
+            complex dimension(45) :: rdss
+            complex dimension(45) :: rdsh
+            complex dimension(45) :: tupp
+            complex dimension(45) :: tups
+            complex dimension(45) :: tusp
+            complex dimension(45) :: tuss
+            complex dimension(45) :: tush
+            complex dimension(45) :: tdpp
+            complex dimension(45) :: tdps
+            complex dimension(45) :: tdsp
+            complex dimension(45) :: tdss
+            complex dimension(45) :: tdsh
+            complex :: ruppfs
+            complex :: rupsfs
+            complex :: ruspfs
+            complex :: russfs
+            complex :: rushfs
+            complex :: dvpfs
+            complex :: dvsfs
+            complex :: drpfs
+            complex :: drsfs
+            complex :: dtshfs
+            complex dimension(45) :: xi
+            complex dimension(45) :: eta
+            integer*2 dimension(46) :: cnvrsn
+            integer*2 dimension(45) :: reverb
+            common /invsav1/ mu11,mu12,mu21,mu22,md11,md12,md21,md22,nu11,nu12,nu21,nu22,nd11,nd12,nd21,nd22,mu,epa,epb,zsh
+            common /invsav2/ darupp,darups,darusp,daruss,darush,dardpp,dardps,dardsp,dardss,dardsh,datupp,datups,datusp,datuss,datush,datdpp,datdps,datdsp,datdss,datdsh,dbrupp,dbrups,dbrusp,dbruss,dbrush,dbrdpp,dbrdps,dbrdsp,dbrdss,dbrdsh,dbtupp,dbtups,dbtusp,dbtuss,dbtush,dbtdpp,dbtdps,dbtdsp,dbtdss,dbtdsh,dxi,deta
+            common /invsav3/ druppfs,drupsfs,druspfs,drussfs,drushfs,ddvpfs,ddvsfs,ddrpfs,ddrsfs,ddtshfs
+            common /invsav4/ srndpp,srndps,srndsp,srndss,srndsh,stnupp,stnups,stnusp,stnuss,stnush,srnupp,srnups,srnusp,srnuss,srnush,sdvp,sdvs,sdrp,sdrs,sdts
+            common /srctrm/ mus11,mus12,mus21,mus22,mussh,nus11,nus12,nus21,nus22,nussh,mds11,mds12,mds21,mds22,mdssh,nds11,nds12,nds21,nds22,ndssh,pup0,pdn0,svup0,svdn0,shup0,shdn0,pupp1,pdnp1,svupp1,svdnp1,shupp1,shdnp1,pupm1,pdnm1,svupm1,svdnm1,shupm1,shdnm1,pupp2,pdnp2,svupp2,svdnp2,shupp2,shdnp2,pupm2,pdnm2,svupm2,svdnm2,shupm2,shdnm2,mxx,mxy,mxz,myy,myz,mzz,rhos,alfas,betas,srclyr
+            common /respns/ dvpup,dvsup,drpup,drsup,dtsup,dvpdn,dvsdn,drpdn,drsdn,dtsdn
+            common /model/ alfa,beta,qp,qs,rho,thik
+            common /rfltrn/ rupp,rups,rusp,russ,rush,rdpp,rdps,rdsp,rdss,rdsh,tupp,tups,tusp,tuss,tush,tdpp,tdps,tdsp,tdss,tdsh,ruppfs,rupsfs,ruspfs,russfs,rushfs,dvpfs,dvsfs,drpfs,drsfs,dtshfs,xi,eta,cnvrsn,reverb
+        end subroutine ifmat
+        function qabm(w,t1,t2,qm) ! in :respknt:abm.f
+            real*8 :: w
+            real*8 :: t1
+            real*8 :: t2
+            real*8 :: qm
+            real*8 :: qabm
+        end function qabm
+        function vabm(w,t1,t2,qm) ! in :respknt:abm.f
+            real*8 :: w
+            real*8 :: t1
+            real*8 :: t2
+            real*8 :: qm
+            real*8 :: vabm
+        end function vabm
+        subroutine dfftr(x,nft,dirctn,delta) ! in :respknt:dfftr.f
+            real dimension(*) :: x
+            integer :: nft
+            character*7 :: dirctn
+            real :: delta
+            integer :: inunit
+            integer :: ounit
+            common /innout/ inunit,ounit
+        end subroutine dfftr
+        subroutine fft(data,nn,isign) ! in :respknt:fft.f
+            real dimension(1) :: data
+            integer :: nn
+            integer :: isign
+        end subroutine fft
+        function npowr2(n) ! in :respknt:npowr2.f
+            integer :: n
+            integer :: npowr2
+        end function npowr2
+    end interface 
+end python module respknt
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
